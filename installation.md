@@ -267,7 +267,7 @@ Refer to the how-to documentation for the security definition settings. This sec
 security definition.
 
 In the JCL library, edit FA##SD. Add the userids and their permission levels to the SYSUT1 DD. Change all occurrences of
-## to the value used for @id@ when defining the instance. The job will create a document template member and define it
+"##" to the value used for @id@ when defining the instance. The job will create a document template member and define it
 to the instance group. Submit the job. Upon successful completion, install the document template definition.
 
 ### Replication
