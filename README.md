@@ -42,7 +42,7 @@ Please refer to the following locations for additional info regarding this proje
 
 ### Contributors
 
-- **_Randy Frerking_**,	Walmart Technology
-- **_Rich Jackson_**, Walmart Technology
-- **_Michael Karagines_**, Walmart Technology
-- **_Trey Vanderpool_**, Walmart Technology
+- **_Randy Frerking_**,	WalmartLabs
+- **_Rich Jackson_**, WalmartLabs
+- **_Michael Karagines_**, WalmartLabs
+- **_Trey Vanderpool_**, WalmartLabs
