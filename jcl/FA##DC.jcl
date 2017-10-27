@@ -17,7 +17,8 @@
 type: AS
 http://sysplex01-fam.mycompany.com:@rep_port@
 /*
-//SYSUT2    DD DISP=SHR,DSN=@doct_lib@(FA##DC)
+//SYSUT2    DD DISP=SHR,
+//             DSN=@doct_lib@(FA##DC)
 //SYSIN     DD DUMMY
 //**********************************************************************
 //* Define FA##DC document template definition

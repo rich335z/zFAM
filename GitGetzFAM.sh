@@ -1,4 +1,7 @@
-#/bin/sh
+#!/bin/sh
+# This script is used to sync MVS libs back to USS for Git compatibility
+# Update working directory for project
+# Update PDS names to local source lib names
 cd /apps/DEV/INFDS/zFAM
 cp -T -U "//'SYS3.CICS.ZCLOUD.IP.zFAM.MD.V010000'" . 2> /dev/null
 cp -T -U "//'SYS3.CICS.ZCLOUD.IP.zFAM.TXT.V010000'" ./txt 2> /dev/null

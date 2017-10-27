@@ -28,7 +28,8 @@ User=USERID2 ,Delete,xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ¦
                                                        ¦
                                                        ¦
 /*
-//SYSUT2    DD DISP=SHR,DSN=@doct_lib@(FA##SD)
+//SYSUT2    DD DISP=SHR,
+//             DSN=@doct_lib@(FA##SD)
 //SYSIN     DD DUMMY
 //**********************************************************************
 //* Define FA##SD document template definition

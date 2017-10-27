@@ -25,7 +25,8 @@ ID=000,Col=0000132,Len=000005,Type=N,Sec=01,Name=ZipCode         ¦
 ID=000,Col=0000137,Len=000004,Type=N,Sec=01,Name=ZipCodeExt      ¦
 ID=002,Col=0000141,Len=000010,Type=N,Sec=01,Name=PhoneNumber     ¦
 /*
-//SYSUT2    DD DISP=SHR,DSN=@doct_lib@(FA##FD)
+//SYSUT2    DD DISP=SHR,
+//             DSN=@doct_lib@(FA##FD)
 //SYSIN     DD DUMMY
 //**********************************************************************
 //* Define FA##FD document template definition

@@ -29,13 +29,14 @@
 //CUSTOMIZ EXEC PGM=IKJEFT1B
 //SYSPRINT DD SYSOUT=*
 //SYSTSPRT DD SYSOUT=*
-//INPUT    DD DISP=SHR,DSN=@source_lib@(CSDFA##)
+//INPUT    DD DISP=SHR,
+//            DSN=@srclib_prfx@.@source_vrsn@.RDO(CSDFA##)
 //OUTPUT   DD DISP=(NEW,PASS),DSN=&&CSDCMDS,
 //            UNIT=VIO,SPACE=(80,(1000,1000)),
 //            DCB=(LRECL=80,RECFM=FB)
 //STRINGS  DD DISP=(OLD,PASS),DSN=&&STRINGS
 //SYSTSIN  DD *
- EXEC '@source_lib@(REXXREPL)'
+ EXEC '@srclib_prfx@.@source_vrsn@.EXEC(REXXREPL)'
 /*
 //**********************************************************************
 //* Define the CSD definitions for one instance of ZFAM
@@ -51,13 +52,14 @@
 //ECSFILEC EXEC PGM=IKJEFT1B
 //SYSPRINT DD SYSOUT=*
 //SYSTSPRT DD SYSOUT=*
-//INPUT    DD DISP=SHR,DSN=@source_lib@(ZFAMFILE)
+//INPUT    DD DISP=SHR,
+//            DSN=@srclib_prfx@.@source_vrsn@.IDCAMS(ZFAMFILE)
 //OUTPUT   DD DISP=(NEW,PASS),DSN=&&ZFAMFILE,
 //            UNIT=VIO,SPACE=(80,(1000,1000)),
 //            DCB=(LRECL=80,RECFM=FB)
 //STRINGS  DD DISP=(OLD,PASS),DSN=&&STRINGS
 //SYSTSIN  DD *
- EXEC '@source_lib@(REXXREPL)'
+ EXEC '@srclib_prfx@.@source_vrsn@.EXEC(REXXREPL)'
 /*
 //**********************************************************************
 //* Define the ZFAMFILE for one instance of ZFAM
@@ -71,13 +73,14 @@
 //ZFAMKEYC EXEC PGM=IKJEFT1B
 //SYSPRINT DD SYSOUT=*
 //SYSTSPRT DD SYSOUT=*
-//INPUT    DD DISP=SHR,DSN=@source_lib@(ZFAMKEY)
+//INPUT    DD DISP=SHR,
+//            DSN=@srclib_prfx@.@source_vrsn@.IDCAMS(ZFAMKEY)
 //OUTPUT   DD DISP=(NEW,PASS),DSN=&&ZFAMKEY,
 //            UNIT=VIO,SPACE=(80,(1000,1000)),
 //            DCB=(LRECL=80,RECFM=FB)
 //STRINGS  DD DISP=(OLD,PASS),DSN=&&STRINGS
 //SYSTSIN  DD *
- EXEC '@source_lib@(REXXREPL)'
+ EXEC '@srclib_prfx@.@source_vrsn@.EXEC(REXXREPL)'
 /*
 //**********************************************************************
 //* Define the ZFAMKEY for one instance of ZFAM
