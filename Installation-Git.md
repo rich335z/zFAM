@@ -62,7 +62,7 @@ names would be the ones pointing to the VIPA distribute address on their respect
 
         git remote add upstream git://github.com/walmart/zFAM.git
 
-1. In the working directory, there is a script named `Git2zos.exec`. This script will create a PDSE associated with each folder in the working directory and copy the respective files into those PDSE's. To run the script, first identify the values to be used for **@srclib_prfx@** and **@source_vrsn@** are described in Step 7. These values will be passed as arguments on the script invocation. _From within the working directory_, issue the command like so (the arguments are not case-sensitive):
+1. In the working directory, there is a script named `Git2zos.exec`. This script will create a PDSE associated with each folder in the working directory and copy the respective files into those PDSE's. To run the script, first identify the values to be used for **@srclib_prfx@** and **@source_vrsn@** as described in Step 7. These values will be passed as arguments on the script invocation. _From within the working directory_, issue the command like so (the arguments are not case-sensitive):
         
         Git2zos.exec 'YOUR.SOURCELIB.PREFIX' 'V010000'
 
